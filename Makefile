@@ -18,10 +18,10 @@ CPPUTEST_HOME = Testing/CppUTest
 CPP_PLATFORM ?= Gcc
 
 CPPUTEST_USE_EXTENSIONS = Y
-CPPUTEST_WARNINGFLAGS += -Wall 
-CPPUTEST_WARNINGFLAGS += -Wswitch-default 
+CPPUTEST_WARNINGFLAGS += -Wall
+CPPUTEST_WARNINGFLAGS += -Wswitch-default
 CPPUTEST_CFLAGS += -std=gnu89
-CPPUTEST_CFLAGS += -Wextra 
+CPPUTEST_CFLAGS += -Wextra
 CPPUTEST_CFLAGS += -Wstrict-prototypes
 CPPUTEST_CFLAGS += -Werror=pointer-arith
 CPPUTEST_CFLAGS += -Wcast-align
@@ -48,6 +48,8 @@ INCLUDE_DIRS += \
 	$(CPPUTEST_HOME)/include \
 	Testing/Utilities \
 	Testing/Mocks
+
+LD_LIBRARIES += -lm -ldl
 
 # Defer to CppUTest's build system to finish build
 include $(CPPUTEST_HOME)/build/MakefileWorker.mk
