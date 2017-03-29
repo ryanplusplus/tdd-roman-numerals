@@ -1,2 +1,5 @@
 Testing/Build
+Testing/CppUTest/lib
 .DS_Store
+*.a
+*.o
