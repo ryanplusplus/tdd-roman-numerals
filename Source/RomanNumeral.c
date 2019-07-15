@@ -14,7 +14,7 @@ static char * Append(char *output, const char *toAppend)
 typedef struct
 {
    unsigned base;
-   const char * s;
+   const char *s;
 } TableEntry_t;
 
 static const TableEntry_t table[] =
