@@ -32,7 +32,7 @@ static const TableEntry_t table[] =
 
 void RomanNumeral_Convert(unsigned input, char *output)
 {
-   for(size_t i = 0; i < sizeof(table)/sizeof(table[0]); i++)
+   for(size_t i = 0; i < sizeof(table) / sizeof(table[0]); i++)
    {
       while(input >= table[i].base)
       {
